@@ -234,6 +234,10 @@ header .btn {
 	padding:0 0 80px;
 }
 
+input {
+    color: #000;
+}
+
 #travel {
 	background-image: url(../img/kraft.jpg);
 }
