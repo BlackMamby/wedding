@@ -38,9 +38,12 @@
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <!-- Angular -->
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.min.js"></script>
+
 </head>
 
-<body id="page-top">
+<body id="page-top" ng-app="">
 
 <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
@@ -81,6 +84,7 @@
     <div class="header-content">
         <div class="header-content-inner">
             <img src="img/logo.png"/>
+
             <p>Sabato 29 Agosto 2015</p>
             <hr>
             <a href="#rsvp" class="btn btn-primary btn-xl page-scroll">RSVP</a>
@@ -152,6 +156,8 @@
                 <hr class="light">
                 <p class="text-faded">Fateci sapere se festeggerete con noi. Nome, Cognome, +1, Vegetariano, Dedicaci
                     una canzone, pets friendly</p>
+
+                <div ng-include="'form.html'"></div>
 
 
             </div>
