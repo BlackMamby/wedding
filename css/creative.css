@@ -238,7 +238,7 @@ header .btn {
     border-bottom: medium none;
     border-top: 3px dashed #d3b484;
     margin: 40px auto;
-    max-width: 90%;
+    max-width: 100%;
 }
 
 form label {
@@ -265,18 +265,34 @@ input {
     text-align: left;
     list-style: none;
 }
-
+.ss-form-entry > table {
+    margin: 0 auto;
+}
+.ss-scalenumbers {
+    padding: 5px 10px;
+}
 .ss-choice-item-control {
-    width: 30px;
     display: inline-block;
+    margin: 0 5px 0 0;
 }
 .ss-choice-label {
     display: inline-block;
 }
 
+.ss-choices {
+    padding:0;
+}
 ul.ss-choices li{
     list-style: none;
     text-align: left;
+}
+
+.col-lg-3 .ss-q-item-label {
+    text-align: left;
+}
+
+textarea {
+    width:100%;
 }
 
 .ss-q-other-container input {
@@ -285,6 +301,19 @@ ul.ss-choices li{
     line-height: 10pt;
     padding: 3px 6px;
     width: 60%;
+}
+
+#ss-submit {
+    background: #5a7245 none repeat scroll 0 0;
+    border-radius: 50px;
+    font-family: "Roboto",sans-serif;
+    margin: 15px 0 0;
+    padding: 20px 30px;
+    width: 50%;
+}
+
+#ss-submit:hover {
+    background: #648c40 none repeat scroll 0 0;
 }
 
 #registry {
