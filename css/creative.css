@@ -234,11 +234,60 @@ header .btn {
 	padding:0 0 80px;
 }
 
-input {
-    color: #000;
+#rsvp form hr {
+    border-bottom: medium none;
+    border-top: 3px dashed #d3b484;
+    margin: 40px auto;
+    max-width: 90%;
 }
 
-#travel {
+form label {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+input {
+    background: #a1ba8a none repeat scroll 0 0;
+    border: medium none;
+    border-radius: 10px;
+    color: #fff;
+    font-family: "Dancing Script",cursive;
+    font-size: 20pt;
+    line-height: 10pt;
+    padding: 10px;
+    width: 99%;
+}
+
+.ss-q-title {
+    font-size: 15pt;
+}
+
+.ss-radio ul li {
+    text-align: left;
+    list-style: none;
+}
+
+.ss-choice-item-control {
+    width: 30px;
+    display: inline-block;
+}
+.ss-choice-label {
+    display: inline-block;
+}
+
+ul.ss-choices li{
+    list-style: none;
+    text-align: left;
+}
+
+.ss-q-other-container input {
+    display: inline-block;
+    font-size: 15pt;
+    line-height: 10pt;
+    padding: 3px 6px;
+    width: 60%;
+}
+
+#registry {
 	background-image: url(../img/kraft.jpg);
 }
 
