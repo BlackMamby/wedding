@@ -140,16 +140,18 @@
 </section>
 
 <section class="bg-primary" id="rsvp" ng-controller="rsvpController">
-    <div ng-include="'thanks.html'" ng-hide="!rsvpDone"></div>
 
-    <div class="container" ng-hide="rsvpDone">
+    <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 text-center">
                 <h2 class="section-heading">RSVP</h2>
                 <hr class="light">
-                <p class="text-faded">Fateci sapere se festeggerete con noi.</p>
+                <p class="text-faded" ng-hide="rsvpDone">Fateci sapere se festeggerete con noi.</p>
             </div>
-            <div ng-include="'form.html'"></div>
+        </div>
+        <div>
+            <div ng-include="'thanks.html'" ng-hide="!rsvpDone"></div>
+            <div ng-include="'form.html'" ng-hide="rsvpDone"></div>
         </div>
     </div>
 
