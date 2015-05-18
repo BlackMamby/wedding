@@ -293,6 +293,14 @@ ul.ss-choices li{
 
 textarea {
     width:100%;
+    background: #a1ba8a none repeat scroll 0 0;
+    border: medium none;
+    border-radius: 10px;
+    color: #fff;
+    font-family: "Dancing Script",cursive;
+    font-size: 20pt;
+    line-height: 10pt;
+    padding: 10px;
 }
 
 .ss-q-other-container input {
