@@ -1,7 +1,24 @@
 <div class="container">
     <div class="row">
-        <form onsubmit="" target="_self" id="ss-form" method="POST"
-              action="https://docs.google.com/forms/d/1BiANNk5gJg31Q2BSNn4ODUO4Vx-TUScZ6gSicH9tPmY/formResponse">
+
+        <script>
+            var setRsvpDone = function(isDone)
+            {
+                var scope = angular.element($("#rsvp")).scope();
+                scope.$apply(function () {
+                    scope.rsvpDone = isDone;
+                    scope.scrollTo('rsvp');
+                });
+            }
+        </script>
+
+        <iframe name="iframe_txlbrchf" id="iframe_txlbrchf" style="display:none;" ng-app="weddingApp" ng-controller="rsvpController"
+                onload="if(typeof sent_txlbrchf!='undefined') {
+                    setRsvpDone(true);
+                }"></iframe>
+
+        <form action="https://docs.google.com/forms/d/1BiANNk5gJg31Q2BSNn4ODUO4Vx-TUScZ6gSicH9tPmY/formResponse"
+              method="POST" id="ss-form" target="iframe_txlbrchf" onsubmit="sent_txlbrchf=true">
 
             <div class="col-lg-10 col-lg-offset-1 text-center">
                 <div class="col-lg-3 text-center">
@@ -10,7 +27,8 @@
                             <div class="ss-form-entry">
                                 <label for="entry_463385738" class="ss-q-item-label">
                                     <div class="ss-q-title">Nome
-                                        <label aria-label="(Required field)" for="itemView.getDomIdToLabel()"></label>
+                                        <label aria-label="(Required field)"
+                                               for="itemView.getDomIdToLabel()"></label>
                                         <span aria-hidden="true" class="ss-required-asterisk">*</span></div>
                                     <div dir="ltr" class="ss-q-help ss-secondary-text"></div>
                                 </label>
@@ -31,7 +49,8 @@
                             <div class="ss-form-entry">
                                 <label for="entry_2053750926" class="ss-q-item-label">
                                     <div class="ss-q-title">Cognome
-                                        <label aria-label="(Required field)" for="itemView.getDomIdToLabel()"></label>
+                                        <label aria-label="(Required field)"
+                                               for="itemView.getDomIdToLabel()"></label>
                                         <span aria-hidden="true" class="ss-required-asterisk">*</span></div>
                                     <div dir="ltr" class="ss-q-help ss-secondary-text"></div>
                                 </label>
@@ -52,7 +71,8 @@
                             <div class="ss-form-entry">
                                 <label for="entry_317101012" class="ss-q-item-label">
                                     <div class="ss-q-title">E-mail
-                                        <label aria-label="(Required field)" for="itemView.getDomIdToLabel()"></label>
+                                        <label aria-label="(Required field)"
+                                               for="itemView.getDomIdToLabel()"></label>
                                         <span aria-hidden="true" class="ss-required-asterisk">*</span></div>
                                     <div dir="ltr" class="ss-q-help ss-secondary-text"></div>
                                 </label>
@@ -97,7 +117,8 @@
                             <div class="ss-form-entry">
                                 <label for="entry_277120920" class="ss-q-item-label">
                                     <div class="ss-q-title">Vieni a festeggiare?
-                                        <label aria-label="(Required field)" for="itemView.getDomIdToLabel()"></label>
+                                        <label aria-label="(Required field)"
+                                               for="itemView.getDomIdToLabel()"></label>
                                         <span aria-hidden="true" class="ss-required-asterisk">*</span></div>
                                     <div dir="ltr" class="ss-q-help ss-secondary-text"></div>
                                 </label>
@@ -259,32 +280,42 @@
                                         </td>
                                         <td class="ss-scalerow">
                                             <div class="ss-scalerow-fieldcell"><input type="radio" aria-label="1"
-                                                                                      class="ss-q-radio" role="radio"
-                                                                                      id="group_670226701_1" value="1"
+                                                                                      class="ss-q-radio"
+                                                                                      role="radio"
+                                                                                      id="group_670226701_1"
+                                                                                      value="1"
                                                                                       name="entry.670226701"></div>
                                         </td>
                                         <td class="ss-scalerow">
                                             <div class="ss-scalerow-fieldcell"><input type="radio" aria-label="2"
-                                                                                      class="ss-q-radio" role="radio"
-                                                                                      id="group_670226701_2" value="2"
+                                                                                      class="ss-q-radio"
+                                                                                      role="radio"
+                                                                                      id="group_670226701_2"
+                                                                                      value="2"
                                                                                       name="entry.670226701"></div>
                                         </td>
                                         <td class="ss-scalerow">
                                             <div class="ss-scalerow-fieldcell"><input type="radio" aria-label="3"
-                                                                                      class="ss-q-radio" role="radio"
-                                                                                      id="group_670226701_3" value="3"
+                                                                                      class="ss-q-radio"
+                                                                                      role="radio"
+                                                                                      id="group_670226701_3"
+                                                                                      value="3"
                                                                                       name="entry.670226701"></div>
                                         </td>
                                         <td class="ss-scalerow">
                                             <div class="ss-scalerow-fieldcell"><input type="radio" aria-label="4"
-                                                                                      class="ss-q-radio" role="radio"
-                                                                                      id="group_670226701_4" value="4"
+                                                                                      class="ss-q-radio"
+                                                                                      role="radio"
+                                                                                      id="group_670226701_4"
+                                                                                      value="4"
                                                                                       name="entry.670226701"></div>
                                         </td>
                                         <td class="ss-scalerow">
                                             <div class="ss-scalerow-fieldcell"><input type="radio" aria-label="5"
-                                                                                      class="ss-q-radio" role="radio"
-                                                                                      id="group_670226701_5" value="5"
+                                                                                      class="ss-q-radio"
+                                                                                      role="radio"
+                                                                                      id="group_670226701_5"
+                                                                                      value="5"
                                                                                       name="entry.670226701"></div>
                                         </td>
                                         <td aria-hidden="true" class="ss-scalerow ss-rightlabel">Sto a 2000!</td>

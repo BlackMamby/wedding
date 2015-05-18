@@ -34,7 +34,7 @@
 
 </head>
 
-<body id="page-top" ng-app="">
+<body id="page-top" ng-app="weddingApp">
 
 <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
@@ -139,8 +139,10 @@
     </div>
 </section>
 
-<section class="bg-primary" id="rsvp">
-    <div class="container">
+<section class="bg-primary" id="rsvp" ng-controller="rsvpController">
+    <div ng-include="'thanks.html'" ng-hide="!rsvpDone"></div>
+
+    <div class="container" ng-hide="rsvpDone">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 text-center">
                 <h2 class="section-heading">RSVP</h2>
@@ -150,6 +152,7 @@
             <div ng-include="'form.html'"></div>
         </div>
     </div>
+
 </section>
 
 <section id="registry">
@@ -241,11 +244,10 @@
 
 <!-- Angular -->
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.min.js"></script>
+<script src="js/app.js"></script>
 
 <script>
-    var $map
-            , $cover
-            ;
+    var $map, $cover;
 
     $map = $('.google_map');
     $cover = $('<div class="cover"></div>');
