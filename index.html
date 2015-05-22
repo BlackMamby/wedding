@@ -24,7 +24,6 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/creative.css" type="text/css">
-    <link href="css/fixed-positioning.css" rel="stylesheet" type="text/css" />
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -75,11 +74,8 @@
     <!-- /.container-fluid -->
 </nav>
 
-<div id="easing" data-0="right:100%" data-1000-end="right:-50%;">
-    <div id='airbaloon' class="soaring"></div>
-</div>
-<header>
 
+<header>
     <div class="header-content">
         <div class="header-content-inner">
             <img src="img/logo.png"/>
@@ -102,7 +98,7 @@
 
                     <h3>Dove e Quando</h3>
 
-                    <p class="text-muted"><strong>Sabato 29 Agosto 2015</strong> <br/>presso la <a
+                    <p class="text-muted">Vi aspettiamo <br/> <strong>Sabato 29 Agosto 2015</strong> <br/>presso la <a
                             href="http://www.tenutadisantalucia.com/" target="_blank">Tenuta di Santa Lucia</a> <br/>a
                         Soriano nel Cimino (VT).</p>
                 </div>
@@ -113,8 +109,8 @@
 
                     <h3>La Cerimonia</h3>
 
-                    <p class="text-muted">La cerimonia sarà celebrata in rito civile nel giardino della Tenuta, <br/>alle
-                        <strong>ore 17:30</strong>.</p>
+                    <p class="text-muted">Ci sposeremo <br/>con rito civile <br/>nel giardino della Tenuta, <br/>alle
+                        <strong>ore 18:00</strong>.</p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 text-center">
@@ -123,7 +119,7 @@
 
                     <h3>Ricevimento</h3>
 
-                    <p class="text-muted">Seguirà il ricevimento <br/>con <strong>aperitivo a buffet</strong> <br/>e
+                    <p class="text-muted">Brinderemo con voi tutti <br/>partendo dall'<strong>aperitivo a buffet</strong> <br/>e proseguiremo  <br/>con
                         <strong>cena placè</strong>.</p>
                 </div>
             </div>
@@ -153,9 +149,9 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 text-center">
-                <h2 class="section-heading">RSVP</h2>
+                <h2 class="section-heading">RSVP <i class="fa fa-1x fa-check-circle wow bounceIn" data-wow-delay=".1s"></i></h2>
                 <hr class="light">
-                <p class="text-faded" ng-hide="rsvpDone">Fateci sapere se festeggerete con noi.</p>
+                <p ng-hide="rsvpDone">Fateci sapere se festeggerete con noi.</p>
             </div>
         </div>
         <div>
@@ -166,23 +162,10 @@
 
 </section>
 
-<section id="calendar">
-    <div class="container text-center">
-        <div title="Aggiungi al calendario" class="addthisevent">
-            Aggiungi al calendario
-            <span class="start">08/29/2015 05:00 PM</span>
-            <span class="end">08/30/2015 09:00 AM</span>
-            <span class="timezone">Europe/Rome</span>
-            <span class="title">Matrimonio di Mirta & Luca</span>
-            <span class="description">Matrimonio di Mirta e Luca</span>
-            <span class="location">Soriano del Cimino, Strada Ortana Km 13.200</span>
-            <span class="organizer">Luca Martinetti</span>
-            <span class="organizer_email">luca@luca.io</span>
-            <!--<span class="facebook_event">https://www.facebook.com/events/703782616363133</span>-->
-            <span class="all_day_event">true</span>
-            <span class="date_format">MM/DD/YYYY</span>
-        </div>
-    </div>
+<section id="cities">
+
+    <div id='airbaloon' class="soaring"></div>
+
 </section>
 
 <section id="registry">
@@ -197,7 +180,7 @@
     </div>
 </section>
 
-<aside class="bg-dark">
+<section class="bg-dark">
     <div class="container">
         <div class="row">
             <div class="col-lg-6 col-md-6 text-center">
@@ -226,7 +209,7 @@
             </div>
         </div>
     </div>
-</aside>
+</section>
 
 <section id="contact">
     <div class="container">
@@ -285,19 +268,6 @@
     $map.append($cover);
     $cover.on('click', function () {
         $cover.remove();
-    });
-</script>
-<!-- Scroll AirBaloon -->
-<script type="text/javascript" src="js/skrollr.min.js"></script>
-<script type="text/javascript">
-    var s = skrollr.init({
-        edgeStrategy: 'set',
-        easing: {
-            WTF: Math.random,
-            inverted: function(p) {
-                return 1-p;
-            }
-        }
     });
 </script>
 
