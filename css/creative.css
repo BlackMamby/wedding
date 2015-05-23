@@ -290,6 +290,11 @@ input {
 .ss-scalenumbers {
     padding: 5px 10px;
 }
+.energylevel{
+    display:block;
+    text-align:center;
+}
+
 .ss-choice-item-control {
     display: inline-block;
     margin: 0 5px 0 0;
