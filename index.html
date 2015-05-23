@@ -165,23 +165,23 @@
 
 </section>
 
-<section id="cities">
+<section id="cities" ng-controller="balloonController">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
                 <div class="col-lg-4">
                     <div id="mirta">
-                        <div id="div1" class="question">Ciao sono Mirta!</div>
+                        <div id="div1" class="question" ng-hide="!isMirta()">{{currentText()}}</div>
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div id='airbaloon' class="soaring">
-                        <button type="button" id="next"></button>
+                        <button type="button" id="next" ng-click="incrementTextIndex()"></button>
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div id="luca">
-                        <div id="div2" class="question">Ciao sono Luca!</div>
+                        <div id="div2" class="question"  ng-hide="!isLuca()">{{currentText()}}</div>
                     </div>
                 </div>
             </div>
