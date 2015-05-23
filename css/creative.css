@@ -394,7 +394,7 @@ textarea {
     margin:0;
     border:0;
 }
-#mirta div {
+#mirta {
     background: #fff none repeat scroll 0 0;
     border-radius: 30px;
     color: #999;
@@ -406,7 +406,7 @@ textarea {
     width:80%;
 }
 
-#mirta div::after {
+#mirta::after {
     border-color: transparent #fff;
     border-style: solid;
     border-width: 0 0 20px 20px;
@@ -420,7 +420,7 @@ textarea {
     width: 0;
 }
 
-#luca div {
+#luca {
     background: #fff none repeat scroll 0 0;
     border-radius: 30px;
     color: #999;
@@ -431,7 +431,7 @@ textarea {
     position: relative;
     width:80%;
 }
-#luca div::after {
+#luca::after {
     border-color: transparent #fff;
     border-style: solid;
     border-width: 20px 20px 0 0;
@@ -480,6 +480,10 @@ textarea {
     -moz-animation-iteration-count: infinite;
     -moz-animation-timing-function: ease-in-out;
     z-index: 30;
+}
+
+.flyaway {
+    opacity:0.5;
 }
 
 #cities {

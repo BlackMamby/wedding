@@ -17,21 +17,23 @@ weddingApp.controller('rsvpController', function ($scope, $location, $anchorScro
 weddingApp.controller('balloonController', function ($scope) {
 
     $scope.texts = ["Guarda Mamma... sto volando!",
+        "Merito del mio amore?",
         "...credo sia il principio di Archimede!",
+        "...",
         "Vogliamo dire qualcosa ai nostri ospiti?",
+        "Aiutooooooooo! Salvatemi!",
         "... spiritoso!",
+        "Ok, ci riprovo: Venghino Signori, venghino! Cibo, musica, ricchi premi e cotillons!",
         "Ancora non ti sei stancato di cliccare?",
         "Guarda che ti si paralizza il dito! Sul serio...",
         "Per ogni drink a Luca, due a me!",
-        "Merito del mio amore?",
-        "Aiutooooooooo! Salvatemi!",
-        "Ok, ci riprovo: Venghino Signori, venghino! Cibo, musica, ricchi premi e cotillons!",
         "Guarda che possiamo andare avanti all'infinito...",
-        "Facciamo così: per ogni click, mi offri un drink?",
-        "Va bene, ci siamo stancati... hai vinto tu! Ci vediamo al matrimonio!"]
+        "Facciamo cosÃ¬: per ogni click, mi offri un drink?",
+        "Va bene, ci siamo stancati... hai vinto tu! Ci vediamo al matrimonio!"];
 
 
     $scope.textIndex = 0;
+    $scope.isDone = false;
 
     $scope.currentText = function () {
         return $scope.texts[$scope.textIndex];
@@ -46,9 +48,13 @@ weddingApp.controller('balloonController', function ($scope) {
     };
 
     $scope.incrementTextIndex = function () {
-        if ($scope.textIndex < $scope.texts.length - 1)
+        if ($scope.textIndex < $scope.texts.length - 1) {
             $scope.textIndex = $scope.textIndex + 1;
-        else
+        }
+        else {
             $scope.textIndex = 0;
+            $scope.isDone = true;
+        }
+
     };
 });
