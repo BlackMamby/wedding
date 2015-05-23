@@ -285,12 +285,16 @@ input {
     list-style: none;
 }
 .ss-form-entry > table {
-    float: left;
     margin: 25px auto 0;
 }
 .ss-scalenumbers {
     padding: 5px 10px;
 }
+.energylevel{
+    display:block;
+    text-align:center;
+}
+
 .ss-choice-item-control {
     display: inline-block;
     margin: 0 5px 0 0;
@@ -395,7 +399,7 @@ textarea {
     margin:0;
     border:0;
 }
-#mirta div {
+#mirta {
     background: #fff none repeat scroll 0 0;
     border-radius: 30px;
     color: #999;
@@ -407,7 +411,7 @@ textarea {
     width:80%;
 }
 
-#mirta div::after {
+#mirta::after {
     border-color: transparent #fff;
     border-style: solid;
     border-width: 0 0 20px 20px;
@@ -421,7 +425,7 @@ textarea {
     width: 0;
 }
 
-#luca div {
+#luca {
     background: #fff none repeat scroll 0 0;
     border-radius: 30px;
     color: #999;
@@ -432,7 +436,7 @@ textarea {
     position: relative;
     width:80%;
 }
-#luca div::after {
+#luca::after {
     border-color: transparent #fff;
     border-style: solid;
     border-width: 20px 20px 0 0;
@@ -481,6 +485,10 @@ textarea {
     -moz-animation-iteration-count: infinite;
     -moz-animation-timing-function: ease-in-out;
     z-index: 30;
+}
+
+.flyaway {
+    opacity:0.5;
 }
 
 #cities {
@@ -769,4 +777,15 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: #222;
+}
+
+@media (max-width:768px) {
+    .header-content-inner {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .header-content-inner img {
+        width:100%;
+    }
 }
