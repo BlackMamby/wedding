@@ -171,29 +171,17 @@
             <div class="col-lg-12">
                 <div class="col-lg-4">
                     <div id="mirta">
-                        <div id="div1" class="question">Guarda Mamma... <br/> sto volando!</div>
-                        <div id="div3" class="question">...credo sia il principio di Archimede!</div>
-                        <div id="div5" class="question">Vogliamo dire qualcosa ai nostri ospiti?</div>
-                        <div id="div7" class="question">... spiritoso!</div>
-                        <div id="div9" class="question">Ancora non ti sei stancato di cliccare?</div>
-                        <div id="div11" class="question">Guarda che ti si paralizza il dito! Sul serio...</div>
-                        <div id="div13" class="question">Per ogni drink a Luca, due a me!</div>
+                        <div id="div1" class="question">Ciao sono Mirta!</div>
                     </div>
-                </div>
-                <div class="col-lg-4">
-                    <div id='airbaloon' class="soaring">
-                        <button type="button" onclick="GetSelectedItem()" id="next"></button>
+                    <div class="col-lg-4">
+                        <div id='airbaloon' class="soaring">
+                            <button type="button" id="next"></button>
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-4">
-                    <div id="luca">
-                        <div id="div2" class="question">Merito del mio amore?</div>
-                        <div id="div4" class="question">...</div>
-                        <div id="div6" class="question">Aiutooooooooo! Salvatemi!</div>
-                        <div id="div8" class="question">Ok, ci riprovo: Venghino Signori, venghino! Cibo, musica, ricchi premi e cotillons!</div>
-                        <div id="div10" class="question">Guarda che possiamo andare avanti all'infinito...</div>
-                        <div id="div12" class="question">Facciamo così: per ogni click, mi offri un drink?</div>
-                        <div id="div14" class="question">Va bene, ci siamo stancati... hai vinto tu! Ci vediamo al matrimonio!</div>
+                    <div class="col-lg-4">
+                        <div id="luca">
+                            <div id="div2" class="question">Ciao sono Luca!</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -285,7 +273,7 @@
 
 
 <!-- jQuery -->
-<script src="js/jquery.js"></script>
+<script src="http://code.jquery.com/jquery-2.1.4.js"></script>
 
 <!-- Bootstrap Core JavaScript -->
 <script src="js/bootstrap.min.js"></script>
@@ -310,21 +298,6 @@
         $cover.remove();
     });
 </script>
-
-<!-- Baloons -->
-<script>
-    $(document).ready(function () {
-
-        $('#div2, #div3, #div4, #div5, #div6, #div7, #div8, #div9, #div10, #div11, #div12, #div13, #div14').hide();
-        $('#next').click(function () {
-            //code
-            var curr = $(".question:visible");
-            curr.next(".question").show();
-            curr.hide();
-        });
-    });
-</script>
-
 
 <!-- Custom Theme JavaScript -->
 <script src="js/creative.js"></script>
