@@ -25,10 +25,10 @@ weddingApp.controller('balloonController', function ($scope) {
         "... spiritoso!",
         "Ok, ci riprovo: Venghino Signori, venghino! Cibo, musica, ricchi premi e cotillons!",
         "Ancora non ti sei stancato di cliccare?",
-        "Guarda che ti si paralizza il dito! Sul serio...",
-        "Per ogni drink a Luca, due a me!",
         "Guarda che possiamo andare avanti all'infinito...",
-        "Facciamo cosÃ¬: per ogni click, mi offri un drink?",
+        "Guarda che ti si paralizza il dito! Sul serio...",
+        "Facciamo cosa: per ogni click, mi offri un drink?",
+        "Per ogni drink a Luca, due a me!",
         "Va bene, ci siamo stancati... hai vinto tu! Ci vediamo al matrimonio!"];
 
 
