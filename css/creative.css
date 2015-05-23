@@ -319,8 +319,7 @@ textarea {
     color: #222;
     font-family: "Dancing Script",cursive;
     font-size: 20pt;
-    line-height: 10pt;
-    padding: 15px 10px 5px;
+    padding: 0 10px 5px;
     box-shadow: 0 0 4px #505050 inset;
     max-width:100% !important
 }
