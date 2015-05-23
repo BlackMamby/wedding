@@ -285,7 +285,6 @@ input {
     list-style: none;
 }
 .ss-form-entry > table {
-    float: left;
     margin: 25px auto 0;
 }
 .ss-scalenumbers {
@@ -769,4 +768,15 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: #222;
+}
+
+@media (max-width:768px) {
+    .header-content-inner {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .header-content-inner img {
+        width:100%;
+    }
 }
