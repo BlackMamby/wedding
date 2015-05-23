@@ -62,7 +62,7 @@
                     <a class="page-scroll" href="#rsvp">RSVP</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#registry">Lista di nozze</a>
+                    <a class="page-scroll" href="#cities">Lista di nozze</a>
                 </li>
                 <li>
                     <a class="page-scroll" href="#contact">Contatti</a>
@@ -109,7 +109,7 @@
 
                     <h3>La Cerimonia</h3>
 
-                    <p class="text-muted">Ci sposeremo <br/>con rito civile <br/>nel giardino della Tenuta, <br/>alle
+                    <p class="text-muted">Ci sposeremo <br/>secondo rito civile <br/>nel giardino della Tenuta, <br/>alle
                         <strong>ore 18:00</strong>.</p>
                 </div>
             </div>
@@ -119,8 +119,9 @@
 
                     <h3>Ricevimento</h3>
 
-                    <p class="text-muted">Brinderemo con voi tutti <br/>partendo dall'<strong>aperitivo a buffet</strong> <br/>e proseguiremo  <br/>con
-                        <strong>cena placè</strong>.</p>
+                    <p class="text-muted">Brinderemo a suon di jazz<br/>partendo dall'<strong>aperitivo</strong> <br/>e
+                        proseguiremo <br/>fino a
+                        <strong>cena</strong>.</p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 text-center">
@@ -129,7 +130,8 @@
 
                     <h3>Party</h3>
 
-                    <p class="text-muted">Dopo il taglio della torta: <br/>party, drinks e <br/><strong>tralalà</strong>.
+                    <p class="text-muted">Dopo il taglio della torta, <br/>via all'<strong>open bar</strong>: <br/>party,
+                        dj, drinks e <br/><strong>tralalà</strong>.
                     </p>
                 </div>
             </div>
@@ -149,9 +151,10 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 text-center">
-                <h2 class="section-heading">RSVP <i class="fa fa-1x fa-check-circle wow bounceIn" data-wow-delay=".1s"></i></h2>
-                <hr class="light">
-                <p ng-hide="rsvpDone">Fateci sapere se festeggerete con noi.</p>
+                <h2 class="section-heading">RSVP <i class="fa fa-1x fa-check-circle wow bounceIn"
+                                                    data-wow-delay=".1s"></i></h2>
+                <hr>
+                <p ng-hide="rsvpDone">Vi chiediamo di confermare la vostra presenza il prima possibile. Grazie.</p>
             </div>
         </div>
         <div>
@@ -163,9 +166,39 @@
 </section>
 
 <section id="cities">
-
-    <div id='airbaloon' class="soaring"></div>
-
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="col-lg-4">
+                    <div id="mirta">
+                        <div id="div1" class="question">Guarda Mamma... <br/> sto volando!</div>
+                        <div id="div3" class="question">...credo sia il principio di Archimede!</div>
+                        <div id="div5" class="question">Vogliamo dire qualcosa ai nostri ospiti?</div>
+                        <div id="div7" class="question">... spiritoso!</div>
+                        <div id="div9" class="question">Ancora non ti sei stancato di cliccare?</div>
+                        <div id="div11" class="question">Guarda che ti si paralizza il dito! Sul serio...</div>
+                        <div id="div13" class="question">Per ogni drink a Luca, due a me!</div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div id='airbaloon' class="soaring">
+                        <button type="button" onclick="GetSelectedItem()" id="next"></button>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div id="luca">
+                        <div id="div2" class="question">Merito del mio amore?</div>
+                        <div id="div4" class="question">...</div>
+                        <div id="div6" class="question">Aiutooooooooo! Salvatemi!</div>
+                        <div id="div8" class="question">Ok, ci riprovo: Venghino Signori, venghino! Cibo, musica, ricchi premi e cotillons!</div>
+                        <div id="div10" class="question">Guarda che possiamo andare avanti all'infinito...</div>
+                        <div id="div12" class="question">Facciamo così: per ogni click, mi offri un drink?</div>
+                        <div id="div14" class="question">Va bene, ci siamo stancati... hai vinto tu! Ci vediamo al matrimonio!</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
 <section id="registry">
@@ -199,7 +232,8 @@
 
                     <h3>Dove dormire</h3>
 
-                    <p class="text-muted">Se desiderate pernottare a Viterbo, <br/>questi sono gli alberghi più vicini: <br/>
+                    <p class="text-muted">Se desiderate pernottare a Viterbo, <br/>questi sono gli alberghi più vicini:
+                        <br/>
                         <a><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i> Link here</a>
                         - <a><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i> Link
                             here</a> - <a><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
@@ -217,7 +251,7 @@
             <div class="col-lg-8 col-lg-offset-2 text-center">
                 <h2 class="section-heading">Domande?</h2>
                 <hr class="primary">
-                <p>Per qualsiasi altra informazione o per auguri speciali, ecco i nostri contatti.</p><br/><br/>
+                <p>Per qualsiasi altra informazione, qui trovate i nostri contatti.</p><br/><br/>
             </div>
             <div class="col-lg-4 text-center">
                 <i class="fa fa-facebook fa-3x wow bounceIn" data-wow-delay=".1s"></i><br/><br/>
@@ -243,6 +277,12 @@
         </div>
     </div>
 </section>
+
+<footer>
+    Design by <a href="http://www.fluxcap.it" target="_blank">the bride</a>, programming by <a
+        href="https://twitter.com/lucamartinetti" target="_blank">the groom</a>.
+</footer>
+
 
 <!-- jQuery -->
 <script src="js/jquery.js"></script>
@@ -270,6 +310,21 @@
         $cover.remove();
     });
 </script>
+
+<!-- Baloons -->
+<script>
+    $(document).ready(function () {
+
+        $('#div2, #div3, #div4, #div5, #div6, #div7, #div8, #div9, #div10, #div11, #div12, #div13, #div14').hide();
+        $('#next').click(function () {
+            //code
+            var curr = $(".question:visible");
+            curr.next(".question").show();
+            curr.hide();
+        });
+    });
+</script>
+
 
 <!-- Custom Theme JavaScript -->
 <script src="js/creative.js"></script>

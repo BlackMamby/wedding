@@ -41,7 +41,8 @@ a {
 
 a:hover,
 a:focus {
-    color: #eb3812;
+    text-decoration: underline;
+    color: #85a06d;
 }
 
 h1,
@@ -62,7 +63,7 @@ p {
 
 .bg-primary {
     background-image: url("../img/kraft.jpg");
-    box-shadow: 0 0 20px #000 inset;
+    box-shadow: 0 0 10px #222 inset;
     color:#222;
 }
 
@@ -239,10 +240,22 @@ header .btn {
 
 #rsvp form hr {
     border-bottom: medium none;
-    border-top: 3px dashed #d3b484;
-    margin: 40px auto;
+    border-top: 3px dashed #222;
+    margin: 30px auto;
     max-width: 100%;
+    opacity:0.3;
 }
+
+
+#rsvp hr {
+    border-bottom: medium none;
+    border-top: 3px solid #222;
+}
+
+#rsvp .ss-q-item-label {
+    margin:10px auto;
+}
+
 
 form label {
     font-family: 'Roboto', sans-serif;
@@ -267,17 +280,13 @@ input {
     font-size: 15pt;
 }
 
-.ss-q-title span {
-    font-size:9pt;
-    display:block;
-}
-
 .ss-radio ul li {
     text-align: left;
     list-style: none;
 }
 .ss-form-entry > table {
-    margin: 0 auto;
+    float: left;
+    margin: 25px auto 0;
 }
 .ss-scalenumbers {
     padding: 5px 10px;
@@ -311,8 +320,9 @@ textarea {
     font-family: "Dancing Script",cursive;
     font-size: 20pt;
     line-height: 10pt;
-    padding: 10px;
+    padding: 15px 10px 5px;
     box-shadow: 0 0 4px #505050 inset;
+    max-width:100% !important
 }
 
 .ss-q-other-container input {
@@ -324,13 +334,13 @@ textarea {
 }
 
 #ss-submit {
-    background: #5a7245 none repeat scroll 0 0;
+    background: #222 none repeat scroll 0 0;
     border-radius: 50px;
+    color: #fff;
     font-family: "Roboto",sans-serif;
-    margin: 15px 0 0;
-    padding: 20px 30px;
-    width: 50%;
-    transition: all .2s ease-in-out;
+    margin: 0;
+    padding: 17px 30px;
+    transition: all 0.2s ease-in-out 0s;
 }
 
 #ss-submit:hover {
@@ -370,13 +380,73 @@ textarea {
 
 #airbaloon {
     height: 550px;
-    width: 393px;
+    width: 333px;
     background: url("../img/baloon.png") no-repeat;
     display: block;
     -webkit-background-size: contain;
     background-size: contain;
     margin: -150px auto 0;
 }
+
+#airbaloon button {
+    height: 100%;
+    width: 100%;
+    background: transparent;
+    display: block;
+    margin:0;
+    border:0;
+}
+#mirta div {
+    background: #fff none repeat scroll 0 0;
+    border-radius: 30px;
+    color: #999;
+    float: right;
+    font-size: 16pt;
+    margin: 20% -50px 0 0;
+    padding: 30px;
+    position: relative;
+    width:80%;
+}
+
+#mirta div::after {
+    border-color: transparent #fff;
+    border-style: solid;
+    border-width: 0 0 20px 20px;
+    bottom: auto;
+    content: "";
+    display: block;
+    left: auto;
+    position: absolute;
+    right: -18px;
+    top: 60%;
+    width: 0;
+}
+
+#luca div {
+    background: #fff none repeat scroll 0 0;
+    border-radius: 30px;
+    color: #999;
+    float: left;
+    font-size: 16pt;
+    margin: 40% 0 0 -50px;
+    padding: 30px;
+    position: relative;
+    width:80%;
+}
+#luca div::after {
+    border-color: transparent #fff;
+    border-style: solid;
+    border-width: 20px 20px 0 0;
+    bottom: auto;
+    content: "";
+    display: block;
+    right: auto;
+    position: absolute;
+    left: -18px;
+    top: 60%;
+    width: 0;
+}
+
 
 @keyframes soar {
     50% {
@@ -415,7 +485,7 @@ textarea {
 }
 
 #cities {
-    background: #fff url('../img/skyline.png') repeat-x;
+    background: #dfeff9 url('../img/skyline.png') repeat-x;
     -webkit-animation: backgroundScroll 20s linear infinite;
     animation: backgroundScroll 220s linear infinite;
 }
@@ -430,13 +500,21 @@ textarea {
     to {background-position: -11318px bottom;}
 }
 
+footer {
+    background: #eee;
+    color: #222;
+    padding: 10px;
+    display: block;
+    text-align:right;
+}
+
 @media(min-width:768px) {
     header {
         min-height: 97%;
     }
 
     header .header-content {
-        position: fixed;
+        position: absolute;
         top: 50%;
         padding: 0 50px;
         -webkit-transform: translateY(-50%);
