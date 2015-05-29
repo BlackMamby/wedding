@@ -14,22 +14,36 @@ weddingApp.controller('rsvpController', function ($scope, $location, $anchorScro
     }
 });
 
+weddingApp.controller('showhide', ['ngAnimate', function ($scope) {
+
+}]);
+
+
 weddingApp.controller('balloonController', function ($scope) {
 
     $scope.texts = ["Guarda Mamma... sto volando!",
         "Merito del mio amore?",
         "...credo sia il principio di Archimede!",
         "...",
-        "Vogliamo dire qualcosa ai nostri ospiti?",
-        "Aiutooooooooo! Salvatemi!",
+        "Senti, vogliamo dire qualcosa ai nostri ospiti?",
+        "Si! Aiutooooooooo! Salvatemi!",
         "... spiritoso!",
         "Ok, ci riprovo: Venghino Signori, venghino! Cibo, musica, ricchi premi e cotillons!",
-        "Ancora non ti sei stancato di cliccare?",
-        "Guarda che possiamo andare avanti all'infinito...",
-        "Guarda che ti si paralizza il dito! Sul serio...",
-        "Facciamo cosa: per ogni click, mi offri un drink?",
+        "Si! Divertimento assicurato!",
+        "Non vediamo l'ora di festeggiare insieme a voi!",
+        "Pssss! Hey! Hey tu, mi aiuti?",
+        "Ti ho detto che non puoi chiedere l'aiuto ai nostri amici!",
+        "Non darle retta!",
+        "Hey tu, ancora non ti sei stancato di cliccare?",
+        "Cosa credi di ottenere continuando a premere il mouse sulle nostre facce?",
+        "Di sicuro non troverà il Sacro Graal!",
+        "Dovresti stare attento... potrebbe paralizzartisi il dito!",
+        "E poi sono dolori! Fossi in te smetterei...",
+        "Facciamo cosa: per ogni tuo click, mi offri un drink?",
         "Per ogni drink a Luca, due a me!",
-        "Va bene, ci siamo stancati... hai vinto tu! Ci vediamo al matrimonio!"];
+        "Niente, sembri motivato...",
+        "Va bene, basta! Ci siamo stancati...",
+        "Ok, Ok! Hai vinto tu! Ci vediamo al matrimonio! Ciaoooo!"];
 
 
     $scope.textIndex = 0;
@@ -50,9 +64,10 @@ weddingApp.controller('balloonController', function ($scope) {
     $scope.incrementTextIndex = function () {
         if ($scope.textIndex < $scope.texts.length - 1) {
             $scope.textIndex = $scope.textIndex + 1;
+            $scope.isDone = false;
         }
         else {
-            $scope.textIndex = 0;
+            $scope.textIndex = -1;
             $scope.isDone = true;
         }
 

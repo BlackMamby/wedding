@@ -225,6 +225,18 @@ header .header-content .header-content-inner p {
 
 header .btn {
 	background-image: url(../img/kraft.jpg);
+    -webkit-transition: all 0.2s ease-in-out 0s;
+    -moz-transition: all 0.2s ease-in-out 0s;
+    -ms-transition: all 0.2s ease-in-out 0s;
+    -o-transition: all 0.2s ease-in-out 0s;
+    transition: all 0.2s ease-in-out 0s;
+}
+header .btn:hover {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);;
 }
 
 #info {
@@ -246,10 +258,44 @@ header .btn {
     opacity:0.3;
 }
 
+#rsvp h3 {
+    color: #fff;
+    font-size: 31pt;
+}
 
 #rsvp hr {
     border-bottom: medium none;
     border-top: 3px solid #222;
+}
+
+#registry hr {
+    border-bottom: medium none;
+    border-top: 3px solid #ead4b3;
+}
+
+#registry .text-primary {
+    color:#fff;
+}
+
+#registry strong {
+    color:#fff;
+}
+
+#registry .service-box p {
+    color:#fff;
+}
+
+#registry p {
+    color:#ead4b3;
+}
+
+.fade-in-out {
+    transition: 1s linear all;
+    opacity: 1;
+}
+
+.fade-in-out.ng-hide {
+    opacity: 0;
 }
 
 #rsvp .ss-q-item-label {
@@ -261,7 +307,7 @@ form label {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
 }
-input {
+input[type=text], input[type=email] {
     background: #fff none repeat scroll 0 0;
     border: medium none;
     border-radius: 10px;
@@ -274,6 +320,10 @@ input {
     -webkit-box-shadow: 0 0 4px #505050 inset;
     -moz-box-shadow: 0 0 4px #505050 inset;
     box-shadow: 0 0 4px #505050 inset;
+}
+
+.ss-scalerow-fieldcell {
+    text-align: center;
 }
 
 .ss-q-title {
@@ -336,6 +386,11 @@ textarea {
     width: 60%;
 }
 
+.other {
+    text-align: right;
+    float: right;
+}
+
 #ss-submit {
     background: #222 none repeat scroll 0 0;
     border-radius: 50px;
@@ -344,6 +399,7 @@ textarea {
     margin: 0;
     padding: 17px 30px;
     transition: all 0.2s ease-in-out 0s;
+    border:0;
 }
 
 #ss-submit:hover {
@@ -354,6 +410,7 @@ textarea {
 
 #registry {
 	background: #85a06d none repeat scroll 0 0;
+    color:#fff;
 }
 
 #map {
@@ -398,6 +455,9 @@ textarea {
     display: block;
     margin:0;
     border:0;
+}
+#airbaloon button:focus {
+    outline:0;
 }
 #mirta {
     background: #fff none repeat scroll 0 0;
@@ -488,7 +548,41 @@ textarea {
 }
 
 .flyaway {
-    opacity:0.5;
+    animation: flyaway 10s linear 1 alternate;
+}
+
+@keyframes flyaway {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    10% {
+        transform: translate(0, 100px);
+    }
+
+    80% {
+        transform: translate(0, -5000px);
+    }
+    100% {
+        transform: translate(0, -6000px);
+    }
+}
+
+@-webkit-keyframes backgroundScroll {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    10% {
+        transform: translate(0, 100px);
+    }
+
+    80% {
+        transform: translate(0, -5000px);
+    }
+    100% {
+        transform: translate(0, -6000px);
+    }
 }
 
 #cities {
@@ -513,6 +607,14 @@ footer {
     padding: 10px;
     display: block;
     text-align:right;
+}
+
+.call-to-action span {
+    color:#ead4b3;
+    font-size:17pt;
+    width: 50%;
+    margin:0 auto;
+    display:block;
 }
 
 @media(min-width:768px) {
@@ -540,6 +642,17 @@ footer {
         margin-left: auto;
         max-width: 80%;
         font-size: 23px;
+    }
+}
+
+@media(max-width:1024px) {
+    .col-lg-12 {
+        width: 100%;
+        float: left;
+    }
+    .col-lg-4 {
+        width:33.3333%;
+        float: left;
     }
 }
 
