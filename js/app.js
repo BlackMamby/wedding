@@ -1,7 +1,7 @@
 /**
  * Created by luca on 5/17/15.
  */
-var weddingApp = angular.module('weddingApp', []);
+var weddingApp = angular.module('weddingApp', ['ngAnimate']);
 
 weddingApp.controller('rsvpController', ['$scope', function ($scope) {
     $scope.rsvpDone = false;
@@ -14,9 +14,9 @@ weddingApp.controller('rsvpController', function ($scope, $location, $anchorScro
     }
 });
 
-weddingApp.controller('showhide', ['ngAnimate', function ($scope) {
+weddingApp.controller('showHide', function ($scope) {
 
-}]);
+});
 
 
 weddingApp.controller('balloonController', function ($scope) {
