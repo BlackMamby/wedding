@@ -315,8 +315,7 @@ input[type=text], input[type=email] {
     color: #222;
     font-family: "Dancing Script",cursive;
     font-size: 20pt;
-    line-height: 10pt;
-    padding: 10px;
+    padding: 3px 12px;
     width: 99%;
     -webkit-box-shadow: 0 0 4px #505050 inset;
     -moz-box-shadow: 0 0 4px #505050 inset;
