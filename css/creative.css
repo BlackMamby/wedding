@@ -261,6 +261,7 @@ header .btn:hover {
 #rsvp h3 {
     color: #fff;
     font-size: 31pt;
+    margin:20px 0 40px;
 }
 
 #rsvp hr {
@@ -397,9 +398,10 @@ textarea {
     color: #fff;
     font-family: "Roboto",sans-serif;
     margin: 0;
-    padding: 17px 30px;
+    padding: 14px 30px;
     transition: all 0.2s ease-in-out 0s;
     border:0;
+    font-size:15pt;
 }
 
 #ss-submit:hover {
