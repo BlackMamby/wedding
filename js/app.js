@@ -7,13 +7,6 @@ weddingApp.controller('rsvpController', ['$scope', function ($scope) {
     $scope.rsvpDone = false;
 }]);
 
-weddingApp.controller('rsvpController', function ($scope, $location, $anchorScroll) {
-    $scope.scrollTo = function (id) {
-        $location.hash(id);
-        $anchorScroll();
-    }
-});
-
 weddingApp.controller('showHide', function ($scope) {
 
 });
