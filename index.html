@@ -165,30 +165,25 @@
 </section>
 
 <section id="cities" ng-controller="balloonController">
-
-    <div class="skyline-overflow">
-        <div class="skyline">
-        </div>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="col-lg-4">
-                    <div id="mirta" class="question" ng-hide="!isMirta() || isDone">{{currentText()}}
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="col-lg-4">
+                        <div id="mirta" class="question" ng-hide="!isMirta() || isDone">{{currentText()}}
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-4">
-                    <div id='airbaloon' ng-class="{flyaway:isDone,soaring:!isDone}">
-                        <button type="button" id="next" ng-click="incrementTextIndex()"></button>
+                    <div class="col-lg-4">
+                        <div id='airbaloon' ng-class="{flyaway:isDone,soaring:!isDone}">
+                            <button type="button" id="next" ng-click="incrementTextIndex()"></button>
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-4">
-                    <div id="luca" class="question" ng-hide="!isLuca() || isDone">{{currentText()}}
+                    <div class="col-lg-4">
+                        <div id="luca" class="question" ng-hide="!isLuca() || isDone">{{currentText()}}
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
 </section>
 
