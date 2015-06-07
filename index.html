@@ -166,25 +166,25 @@
 </section>
 
 <section id="cities" ng-controller="balloonController">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="col-lg-4">
-                        <div id="mirta" class="question" ng-hide="!isMirta() || isDone">{{currentText()}}
-                        </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="col-lg-4">
+                    <div id="mirta" class="question" ng-hide="!isMirta() || isDone">{{currentText()}}
                     </div>
-                    <div class="col-lg-4">
-                        <div id='airbaloon' ng-class="{flyaway:isDone,soaring:!isDone}">
-                            <button type="button" id="next" ng-click="incrementTextIndex()"></button>
-                        </div>
+                </div>
+                <div class="col-lg-4">
+                    <div id='airbaloon' ng-class="{flyaway:isDone,soaring:!isDone}">
+                        <button type="button" id="next" ng-click="incrementTextIndex()"></button>
                     </div>
-                    <div class="col-lg-4">
-                        <div id="luca" class="question" ng-hide="!isLuca() || isDone">{{currentText()}}
-                        </div>
+                </div>
+                <div class="col-lg-4">
+                    <div id="luca" class="question" ng-hide="!isLuca() || isDone">{{currentText()}}
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
 </section>
 
@@ -192,47 +192,70 @@
     <div class="container text-center">
         <div class="call-to-action">
             <h2 class="section-heading">Luna di miele</h2>
-            <hr/>
-            <p>Un grazie di cuore a tutti coloro che vorranno contribuire all'inizio del nostro lungo viaggio
-                insieme.</p>
+            <hr>
+            <span><i style="visibility: visible; animation-delay: 0.1s; animation-name: bounceIn;"
+                     class="fa fa-1x fa-quote-left wow bounceIn text-primary" data-wow-delay=".1s"></i> <i>Il modo
+                migliore per cercare di capire il mondo è vederlo dal maggior numero possibile di
+                angolazioni.</i> <i style="visibility: visible; animation-delay: 0.1s; animation-name: bounceIn;"
+                                    class="fa fa-1x fa-quote-right wow bounceIn text-primary" data-wow-delay=".1s"></i></span><br>
 
-            <span><i class="fa fa-1x fa-quote-left wow bounceIn text-primary" data-wow-delay=".1s"></i> <i>Il modo migliore per cercare di capire il mondo è vederlo dal maggior numero possibile di
-                angolazioni.</i> <i class="fa fa-1x fa-quote-right wow bounceIn text-primary" data-wow-delay=".1s"></i></span><br/>
+            <div class="col-lg-10 col-lg-offset-1 text-center"><p>Abbiamo scelto di non aprire una lista di nozze fatta
+                di oggetti ma di sfruttare questa opportunità <br>per dare valore a quello che crediamo sia più
+                importante: il tempo ed il percorso insieme.<br>
+
+                Il viaggio che partendo dall'Italia ci ha portato negli Stati Uniti ha ancora moltissime altre tappe.
+                <br><br>
+
+                Stiamo pensando a goderci le spiagge dei Caraibi, a vagare per il Sud D'America o magari scoprire il
+                Giappone.<br>
+
+                Come ogni volta non vediamo l'ora di partire per poter poi ritornare un pò cambiati al punto di
+                partenza.<br><br>
+
+                Un grazie di cuore a tutti coloro che vorranno contribuire all'inizio del nostro lungo viaggio insieme.
+                <br>- Mirta e Luca</p></div>
+
+            <br>
 
             <hr class="light">
-            <div ng-controller="showHide">
-                <button class="btn btn-default btn-xl wow tada" ng-click="show = !show">Regala</button>
-                <br/><br/>
+            <div ng-controller="showHide" class="ng-scope">
+                <button ng-click="show = !show" class="btn btn-default btn-xl wow tada"
+                        style="visibility: visible; animation-name: tada;">Regala
+                </button>
+                <br><br>
 
-                <div ng-show="show" class="fade-in-out">
+                <div class="fade-in-out ng-hide" ng-show="show" style="">
 
 
                     <div class="row">
                         <div class="col-lg-4 col-md-4 text-center">
                             <div class="service-box">
-                                <i class="fa fa-2x fa-suitcase wow bounceIn text-primary" data-wow-delay=".1s"></i>
+                                <i data-wow-delay=".1s" class="fa fa-2x fa-suitcase wow bounceIn text-primary"
+                                   style="visibility: visible; animation-delay: 0.1s; animation-name: bounceIn;"></i>
 
-                                <p>Subito dopo il matrimonio <br/>torneremo a San Francisco, e ci concederemo <br/>3
-                                    veloci giorni di "relax" al Burning Man, <br/>prima di tornare alla nostra
+                                <p>Subito dopo il matrimonio <br>torneremo a San Francisco, e ci concederemo <br>3
+                                    veloci giorni di "relax" al Burning Man, <br>prima di tornare alla nostra
                                     quotidianità.</p>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-4 text-center">
                             <div class="service-box">
-                                <i class="fa fa-2x fa-globe wow bounceIn text-primary" data-wow-delay=".1s"></i>
+                                <i data-wow-delay=".1s" class="fa fa-2x fa-globe wow bounceIn text-primary"
+                                   style="visibility: visible; animation-delay: 0.1s; animation-name: bounceIn;"></i>
 
                                 <p>Volendo pianificare la luna di miele con più calma, abbiamo pensato di partire a
-                                    Dicembre <br/>alla scoperta delle isole Caraibiche: <br/>in particolar modo Cuba e
+                                    Dicembre <br>alla scoperta delle isole Caraibiche: <br>in particolar modo Cuba e
                                     Giamaica.</p>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-4 text-center">
                             <div class="service-box">
-                                <i class="fa fa-2x fa-gift wow bounceIn text-primary" data-wow-delay=".1s"></i>
+                                <i data-wow-delay=".1s" class="fa fa-2x fa-gift wow bounceIn text-primary"
+                                   style="visibility: visible; animation-delay: 0.1s; animation-name: bounceIn;"></i>
 
                                 <p><strong>Iban:</strong> intestato a Luca Martinetti.
-                                    <br/><strong>Cash App:</strong> $lucam
-                                    <br/><strong>Venmo:</strong> @Luca-Martinetti</p>
+                                    <br><strong>Cash App:</strong> $lucam
+                                    <br><strong>Venmo:</strong> @Luca-Martinetti</p>
                             </div>
                         </div>
                     </div>
