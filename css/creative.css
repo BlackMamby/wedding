@@ -269,11 +269,6 @@ header .btn:hover {
     border-top: 3px solid #222;
 }
 
-#registry hr {
-    border-bottom: medium none;
-    border-top: 3px solid #ead4b3;
-}
-
 #registry .text-primary {
     color:#fff;
 }
@@ -283,11 +278,11 @@ header .btn:hover {
 }
 
 #registry .service-box p {
-    color:#fff;
+    color:#222;
 }
 
-#registry p {
-    color:#ead4b3;
+#registry .fa {
+    color:#222;
 }
 
 .fade-in-out {
@@ -410,8 +405,7 @@ textarea {
 }
 
 #registry {
-	background: #85a06d none repeat scroll 0 0;
-    color:#fff;
+	background: #fff none repeat scroll 0 0;
 }
 
 #map {
@@ -422,6 +416,15 @@ textarea {
 #map iframe {
 	margin:0;
 	padding:0;
+}
+
+#contact {
+    background:rgba(90, 114, 69, 0.7);
+    color:#fff;
+}
+
+#contact a {
+    color:#fff;
 }
 
 .google_map {
@@ -460,12 +463,16 @@ textarea {
 #airbaloon button:focus {
     outline:0;
 }
+#mirta, #luca {
+    font-family: 'Walter Turncoat', cursive;
+    color:#222;
+    font-size: 16pt;
+}
+
 #mirta {
     background: #fff none repeat scroll 0 0;
     border-radius: 30px;
-    color: #999;
     float: right;
-    font-size: 16pt;
     margin: 20% -50px 0 0;
     padding: 30px;
     position: relative;
@@ -489,9 +496,7 @@ textarea {
 #luca {
     background: #fff none repeat scroll 0 0;
     border-radius: 30px;
-    color: #999;
     float: left;
-    font-size: 16pt;
     margin: 40% 0 0 -50px;
     padding: 30px;
     position: relative;
@@ -611,7 +616,7 @@ footer {
 }
 
 .call-to-action span {
-    color:#ead4b3;
+    color:#85a06d;
     font-size:17pt;
     width: 50%;
     margin:0 auto;
@@ -750,23 +755,18 @@ footer {
 }
 
 .btn-default {
-    border-color: #fff;
-    color: #222;
-    background-color: #fff;
+    color: #fff;
+    background-color: #85a06d;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
 }
 
 .btn-default:hover,
-.btn-default:focus,
-.btn-default.focus,
-.btn-default:active,
-.btn-default.active,
 .open > .dropdown-toggle.btn-default {
-    border-color: #ededed;
-    color: #222;
+    color: #85a06d;
     background-color: #f2f2f2;
+    border: 1px solid #85a06d;
 }
 
 .btn-default:active,
