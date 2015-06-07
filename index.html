@@ -157,7 +157,7 @@
             </div>
         </div>
         <div>
-            <div ng-include="'thanks.html'" ng-hide="!rsvpDone"></div>
+            <div class="fade-in-out" ng-include="'thanks.html'" ng-hide="!rsvpDone"></div>
             <div ng-include="'form.html'" ng-hide="rsvpDone"></div>
         </div>
     </div>
@@ -198,7 +198,8 @@
 
             <hr class="light">
             <div ng-controller="showHide">
-                <button class="btn btn-default btn-xl wow tada" ng-click="show = !show">Regala</button><br/><br/>
+                <button class="btn btn-default btn-xl wow tada" ng-click="show = !show">Regala</button>
+                <br/><br/>
 
                 <div ng-show="show" class="fade-in-out">
                     <p>Un grazie di cuore a tutti coloro che vorranno contribuire all'inizio del nostro lungo viaggio
@@ -250,7 +251,8 @@
 
                     <p class="text-muted">Da <strong>ROMA</strong>: Flaminia Nuova, Cassia Bis (SS2bis) in direzione VT.
                         Proseguire per SR2 (Cura di Vetralla).<br/> Da <strong>VITERBO</strong>: prendere la SS675 <br/>in
-                        direzione SP60 (uscita Bomarzo/Soriano). <br/>Proseguire per Contrada Fornacchia SP151/Ortana, km 13,200.
+                        direzione SP60 (uscita Bomarzo/Soriano). <br/>Proseguire per Contrada Fornacchia SP151/Ortana,
+                        km 13,200.
                     </p>
                 </div>
             </div>
@@ -260,11 +262,16 @@
 
                     <h3>Dove dormire</h3>
 
-                    <p class="text-muted">Se desiderate pernottare nelle vicinanze, <br/>questi sono alcuni alberghi prenotabili:
+                    <p class="text-muted">Se desiderate pernottare nelle vicinanze, <br/>questi sono alcuni alberghi
+                        prenotabili:
                         <br/>
-                        <a href="https://www.diamondresorts.com/Palazzo-Catalani" target="_blank"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i> Palazzo Catalani</a>
-                        <br/><a><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i> Link here</a>
-                        <br/><a href="http://www.allacortedelleterme.it" target="_blank"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                        <a href="https://www.diamondresorts.com/Palazzo-Catalani" target="_blank"><i
+                                class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i> Palazzo
+                            Catalani</a>
+                        <br/><a><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                class="fa fa-star"></i> Link here</a>
+                        <br/><a href="http://www.allacortedelleterme.it" target="_blank"><i class="fa fa-star"></i><i
+                                class="fa fa-star"></i><i class="fa fa-star"></i><i
                                 class="fa fa-star"></i><i class="fa fa-star"></i> La Corte delle terme</a>
                     </p>
                 </div>
