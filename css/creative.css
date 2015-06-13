@@ -1046,17 +1046,8 @@ body {
 
 
 
-@media (max-width:1024px ) and (orientation:landscape) {
+@media (max-width:1024px ) {
     body {
-        background: url("../img/bg.jpg");
-        background-size: cover;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        height: 100%;
-        width: 100%;
-        position: fixed;
-        background-position: center center;
-        background-repeat: no-repeat;
+        background-size:150%;
     }
 }
