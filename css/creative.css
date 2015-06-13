@@ -105,6 +105,24 @@ aside {
     color: #85a06d;
 }
 
+.navbar-brand {
+    float:none;
+    padding: 15px 5px;
+    display: inline-block;
+    margin:0 !important;
+    font-weight: 300 !important;
+    text-transform: lowercase !important;
+}
+
+.navbar-brand:hover {
+    text-decoration: underline !important;
+    color: #85a06d !important;
+}
+
+.navbar-header {
+    font-size:12pt;
+}
+
 .navbar-default .navbar-header .navbar-brand:hover,
 .navbar-default .navbar-header .navbar-brand:focus {
     color: #eb3812;
@@ -1013,5 +1031,23 @@ body {
     #contact .col-lg-4 {
         width: 60%;
         margin:0 auto;
+    }
+}
+
+@media (max-width:767px ) {
+    .navbar-header {
+        display: block;
+        float: right;
+        margin: 0 !important;
+        padding: 0;
+        width: 100%;
+    }
+}
+
+
+
+@media (max-width:1024px ) and (orientation:landscape) {
+    body {
+        background-size: auto 100%;
     }
 }
