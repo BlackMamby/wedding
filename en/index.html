@@ -11,19 +11,22 @@
 
     <title>Mirta & Luca</title>
 
+    <link rel="shortcut icon" href="../favicon.ico">
+
     <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css">
 
     <!-- Custom Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700,100' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Walter+Turncoat' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css" type="text/css">
 
     <!-- Plugin CSS -->
-    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+    <link rel="stylesheet" href="../css/animate.min.css" type="text/css">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/creative.css" type="text/css">
+    <link rel="stylesheet" href="../css/creative.css" type="text/css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -41,8 +44,10 @@
 
 <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
+
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
+            <a href="http://www.mirtaeluca.com" class="navbar-brand page-scroll">IT</a> | <a href="http://www.mirtaeluca.com/en" class="navbar-brand page-scroll">EN</a>
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
                     data-target="#bs-example-navbar-collapse-1">
                 <span class="sr-only">Toggle navigation</span>
@@ -78,9 +83,9 @@
 <header>
     <div class="header-content">
         <div class="header-content-inner">
-            <img src="img/logo.png"/>
+            <img src="../img/logo.png"/>
 
-            <p>Saturday August 29, 2015</p>
+            <p>Saturday, August 29th, 2015</p>
             <hr>
             <a href="#rsvp" class="btn btn-primary btn-xl page-scroll">RSVP</a>
         </div>
@@ -94,41 +99,43 @@
         <div class="row">
             <div class="col-lg-3 col-md-6 text-center">
                 <div class="service-box">
-                    <img src="img/date2.png" class="wow bounceIn" data-wow-delay=".1s">
+                    <img src="../img/date2.png" class="wow bounceIn" data-wow-delay=".1s">
 
                     <h3>When & Where</h3>
 
-                    <p class="text-muted">Our big day is on Saturday, August 29th, at the <a
-                            href="http://www.tenutadisantalucia.com/" target="_blank">Tenuta di Santa Lucia</a> in the beautiful italian country side.</p>
+                    <p class="text-muted">Our big day is on <br/>Saturday, <strong>August 29th</strong>,<br/> at <a
+                            href="http://www.tenutadisantalucia.com/cms/en/" target="_blank">Tenuta di Santa Lucia</a> <br/>in the beautiful italian country side.</p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 text-center">
                 <div class="service-box">
-                    <img src="img/cerimonia2.png" class="wow bounceIn" data-wow-delay=".1s">
+                    <img src="../img/cerimonia2.png" class="wow bounceIn" data-wow-delay=".1s">
 
                     <h3>Ceremony</h3>
 
-                    <p class="text-muted">We'll get married according to the civil rite in the garden of la Tenuta, <br/>at
-                        <strong>18:30</strong>.</p>
+                    <p class="text-muted">We will get married <br/>according to the <strong>civil rite</strong> <br/>in the garden of la Tenuta,
+                        <br/> at <strong>18:30</strong>.</p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 text-center">
                 <div class="service-box">
-                    <img src="img/ricevimento2.png" class="wow bounceIn" data-wow-delay=".1s">
+                    <img src="../img/ricevimento2.png" class="wow bounceIn" data-wow-delay=".1s">
 
                     <h3>Reception</h3>
 
-                    <p class="text-muted">We'll cin-cin with out guests starting with a buffet of local products, a jazz band, and then have dinner.</p>
+                    <p class="text-muted">Let us welcome you<br/> with bubbles, a <strong>buffet</strong> of local products, a jazz band, and then a seated <strong>dinner</strong>.</p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 text-center">
                 <div class="service-box">
-                    <img src="img/party2.png" class="wow bounceIn" data-wow-delay=".1s">
+                    <img src="../img/party2.png" class="wow bounceIn" data-wow-delay=".1s">
 
                     <h3>Party</h3>
 
-                    <p class="text-muted">And after the cake, <br/> get ready for the <strong>open bar</strong>: <br/>party,
-                        dj, drinks and <br/><strong>tralalà</strong>.
+                    <p class="text-muted">Right after the cake,<br/>
+                        get ready for the <strong>open bar</strong>:<br/>
+                        party, dj, drinks <br/>and
+                        <strong>tralalà</strong>.
                     </p>
                 </div>
             </div>
@@ -148,14 +155,13 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 text-center">
-                <h2 class="section-heading">RSVP <i class="fa fa-1x fa-check-circle wow bounceIn"
-                                                    data-wow-delay=".1s"></i></h2>
+                <h2 class="section-heading">RSVP </h2>
                 <hr>
                 <p ng-hide="rsvpDone">We kindly ask you to confirm your attendance as soon as possibile. Thanks.</p>
             </div>
         </div>
         <div>
-            <div ng-include="'thanks.html'" ng-hide="!rsvpDone"></div>
+            <div class="fade-in-out" ng-include="'thanks.html'" ng-hide="!rsvpDone"></div>
             <div ng-include="'form.html'" ng-hide="rsvpDone"></div>
         </div>
     </div>
@@ -171,7 +177,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div id='airbaloon'  ng-class="{flyaway:isDone,soaring:!isDone}">
+                    <div id='airbaloon' ng-class="{flyaway:isDone,soaring:!isDone}">
                         <button type="button" id="next" ng-click="incrementTextIndex()"></button>
                     </div>
                 </div>
@@ -189,14 +195,56 @@
     <div class="container text-center">
         <div class="call-to-action">
             <h2 class="section-heading">Honeymoon</h2>
+            <hr>
+            <span><i style="visibility: visible; animation-delay: 0.1s; animation-name: bounceIn;"
+                     class="fa fa-1x fa-quote-left wow bounceIn text-primary" data-wow-delay=".1s"></i> <i>The best way to understand the world consists in seeing it from as many angles as possible.</i> <i style="visibility: visible; animation-delay: 0.1s; animation-name: bounceIn;"
+                                    class="fa fa-1x fa-quote-right wow bounceIn text-primary" data-wow-delay=".1s"></i></span><br>
 
-            <span><i>Il modo migliore per cercare di capire il mondo è vederlo dal maggior numero possibile di angolazioni.</i> <br/><strong>Ari Kiev</strong></span>
-            <p>Subito dopo il matrimonio torneremo a San Francisco, ma ci concederemo 3 giorni di "relax" al Burning Man prima di tornare alla nostra quotidianeità.
-                Stiamo pianificando la luna di miele per Dicembre (tra le possibili mete Brazile, Cuba, ).
+            <div class="col-lg-10 col-lg-offset-1 text-center"><p>As we don't really need a registry made up of material objects, we decided to take advantage of this opportunity<br/>
+                to give even more value to what we believe is the most important thing: the time we spend together.<br/><br/>
 
-               Ringraziamo anticipatamente tutti coloro che vogliano regalarci momenti.</p>
+                The journey that started from Italy and brought us in the United States still has many other destinations to explore.<br/><br/>
+
+                For our honeymoon we are planning to enjoy the Caribbean beaches, <br/>to wander in South America, or maybe discover Japan.<br/>
+                We look forward to this opportunity to wander, get lost, discover new places, food, and cultures <br/>in order to come back to the starting point a little bit wiser, a little bit changed. Together.<br/><br/>
+
+                A huge thank you to all those who want to contribute to the beginning of our long journey together.
+                <br>- Mirta e Luca -</p></div>
+
+            <br>
+
             <hr class="light">
-            <a href="#" class="btn btn-default btn-xl wow tada">Contribuito</a>
+            <div ng-controller="showHide" class="ng-scope">
+                <button ng-click="show = !show" class="btn btn-default btn-xl wow tada"
+                        style="visibility: visible; animation-name: tada;">Your Gift
+                </button>
+                <br><br>
+
+                <div class="fade-in-out ng-hide" ng-show="show" style="">
+
+
+
+                    <div class="row">
+                        <div class="col-lg-4 col-lg-offset-2 col-md-4 text-center">
+                            <div class="service-box">
+                                <i data-wow-delay=".1s" class="fa fa-2x fa-cc-paypal text-primary"
+                                   style="visibility: visible; animation-delay: 0.1s; animation-name: bounceIn;"></i>
+
+                                <p>Use PayPal</p><br/>
+                                <div class="fade-in-out" ng-include="'donate.html'"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 text-center">
+                            <div class="service-box">
+                                <i data-wow-delay=".1s" class="fa fa-2x fa-gift text-primary"
+                                   style="visibility: visible; animation-delay: 0.1s; animation-name: bounceIn;"></i>
+
+                                <p>Wire transfer<br/><br/>intestato a Luca Martinetti <br/> IBAN 00000000000000000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -206,11 +254,15 @@
         <div class="row">
             <div class="col-lg-6 col-md-6 text-center">
                 <div class="service-box">
-                    <i class="fa fa-2x fa-car wow bounceIn text-primary"></i>
+                    <i class="fa fa-2x fa-car wow bounceIn text-primary" data-wow-delay=".1s"></i>
 
                     <h3>Directions</h3>
 
-                    <p class="text-muted"><strong>AIRPORT</strong>: Flight to Rome Fiumicino.<br/> <strong>CAR</strong>: Rent a car. From <strong>ROMA</strong>: drive to Viterbo. prendere la SS675 <br/>in direzione SP60 (uscita Bomarzo/Soriano). <br/>Proseguire per Contrada Fornacchia SP151/Ortana.</p>
+                    <p class="text-muted"><strong>AIRPORT:</strong> Flight to ROMA Fiumicino. (FCO)<br/>
+                        <strong>CAR:</strong> Rent a Car at the Airport.<br/>
+                        <strong>From ROMA:</strong> <a href="https://www.google.com/maps/dir/Leonardo+da+Vinci+International+Airport,+Via+dell%27+Aeroporto+di+Fiumicino,+320,+00054+Fiumicino+RM,+Italy/Viterbo+VT/@42.1232969,11.6505221,9z/am=t/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x1325f0793898141f:0xafe513b4e358316f!2m2!1d12.246238!2d41.799887!1m5!1m1!1s0x132f2cf9a622dfcf:0xb50255953c6f6b43!2m2!1d12.107669!2d42.4206766?hl=en" target="_blank">drive to the city of VITERBO</a>.<br/>
+                        <strong>From VITERBO:</strong> <a href="https://www.google.com/maps/dir/Viterbo+VT/Tenuta+di+Santa+Lucia,+S.S.+Ortana+Km+13,200,+Soriano+Nel+Cimino+Province+of+Viterbo,+Italy/@42.4435755,12.1354001,13z/data=!4m15!4m14!1m5!1m1!1s0x132f2cf9a622dfcf:0xb50255953c6f6b43!2m2!1d12.107669!2d42.4206766!1m5!1m1!1s0x132f28d1e36ef5e9:0x8a28dbac003028af!2m2!1d12.228167!2d42.466401!3e0!5i1?hl=en" target="_blank">drive to Tenuta di Santa Lucia.</a>
+                    </p>
                 </div>
             </div>
             <div class="col-lg-6 col-md-6 text-center">
@@ -219,12 +271,49 @@
 
                     <h3>Where to sleep</h3>
 
-                    <p class="text-muted">Make sure to book your room on time. <br/> Here some close by places that we suggest:
+                    <p class="text-muted">Make sure to book your room on time. <br/>Here some nearby hotels and resort:
                         <br/>
-                        <a href="https://www.diamondresorts.com/Palazzo-Catalani"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>Palazzo Catalani</a>
-                            <br/><a><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i> Link here</a>
-                        <br/><a href="http://www.allacortedelleterme.it"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
-                                class="fa fa-star"></i><i class="fa fa-star"></i>La Corte delle terme</a>
+                        <a href="https://www.diamondresorts.com/Palazzo-Catalani" target="_blank"><i
+                                class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i> Palazzo
+                            Catalani</a>
+                        <br/><a href="http://book.bestwestern.it/EN/hotel_in_Viterbo_98252.aspx?sob=A135&iata=00170580&utm_source=TripadvisorIT&utm_medium=Business-Listing&utm_campaign=Business-Listing" target="_blank"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                class="fa fa-star"></i> Best Western</a>
+                        <br/><a href="http://www.allacortedelleterme.it" target="_blank"><i class="fa fa-star"></i><i
+                                class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                class="fa fa-star"></i><i class="fa fa-star"></i> La Corte delle terme</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <br/>
+        <hr>
+        <br/>
+        <div class="row">
+            <div class="col-lg-6 col-md-6 text-center">
+                <div class="service-box">
+                    <i class="fa fa-2x fa-camera wow bounceIn text-primary" data-wow-delay=".1s"></i>
+
+                    <h3>What to visit</h3>
+
+                    <p class="text-muted">
+                        <strong>Bomarzo:</strong> The Park of Monsters, 16th Cent. AD - 0h15 far<br/>
+                        <strong>San Pellegrino in Viterbo:</strong> Medieval city, 11th Cent. AD - 0h25 far<br/>
+                        <strong>Necropoli di Tarquinia</strong> Monterozzi necropolis, 7th Cent. BCE - 0h53 far<br/>
+                        <strong>Event in Viterbo:</strong> Macchina di Santa Rosa - Sept 3rd at 9:00 pm<br/>
+                        <strong>Giardino dei Tarocchi:</strong> Sculpture garden, 21st Cent. AD - 1h22 far <br/>
+
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 text-center">
+                <div class="service-box">
+                    <i class="fa fa-2x fa-sun-o wow bounceIn text-primary" data-wow-delay=".1s"></i>
+
+                    <h3>Weather</h3>
+
+                    <p class="text-muted">The weather in Italy at the end of August,<br/> expecially near Viterbo is pretty hot and sunny.<br/>
+                        Usually it's around 80-95°F<br/>
+                        during the whole day.
                     </p>
                 </div>
             </div>
@@ -236,9 +325,9 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 text-center">
-                <h2 class="section-heading">Domande?</h2>
+                <h2 class="section-heading">Questions?</h2>
                 <hr class="primary">
-                <p>If you need further info or help, here our contacts.</p><br/><br/>
+                <p>If you need further info or help, feel free to ping us.</p><br/><br/>
             </div>
             <div class="col-lg-4 text-center">
                 <i class="fa fa-facebook fa-3x wow bounceIn" data-wow-delay=".1s"></i><br/><br/>
@@ -257,9 +346,9 @@
             <div class="col-lg-4 text-center">
                 <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i><br/><br/>
 
-                <p><a href="mailto:your-email@your-domain.com">lucamartinetti@gmail.com</a></p>
+                <p><a href="mailto:lucamartinetti@gmail.com">lucamartinetti@gmail.com</a></p>
 
-                <p><a href="mailto:your-email@your-domain.com">mirta.rotondo@gmail.com</a></p>
+                <p><a href="mailto:mirta.rotondo@gmail.com">mirta.rotondo@gmail.com</a></p>
             </div>
         </div>
     </div>
@@ -275,16 +364,17 @@
 <script src="http://code.jquery.com/jquery-2.1.4.js"></script>
 
 <!-- Bootstrap Core JavaScript -->
-<script src="js/bootstrap.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
 
 <!-- Plugin JavaScript -->
-<script src="js/jquery.easing.min.js"></script>
-<script src="js/jquery.fittext.js"></script>
-<script src="js/wow.min.js"></script>
+<script src="../js/jquery.easing.min.js"></script>
+<script src="../js/jquery.fittext.js"></script>
+<script src="../js/wow.min.js"></script>
 
 <!-- Angular -->
-<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.min.js"></script>
-<script src="js/app.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.16/angular.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.16/angular-animate.js"></script>
+<script src="app.js"></script>
 
 <!-- Google Map Over -->
 <script>
@@ -299,7 +389,7 @@
 </script>
 
 <!-- Custom Theme JavaScript -->
-<script src="js/creative.js"></script>
+<script src="../js/creative.js"></script>
 
 </body>
 
