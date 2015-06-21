@@ -1,0 +1,140 @@
+<div class="row">
+
+    <script>
+        var setRsvpDone = function (isDone) {
+            var scope = angular.element($("#rsvp")).scope();
+            scope.$apply(function () {
+                scope.rsvpDone = isDone;
+            });
+        }
+    </script>
+
+    <iframe name="iframe_txlbrchf" id="iframe_txlbrchf" style="display:none;" ng-app="weddingApp"
+            ng-controller="rsvpController"
+            onload="if(typeof sent_txlbrchf!='undefined') {
+                    setRsvpDone(true);
+                }"></iframe>
+
+
+    <form id="ss-form" onsubmit="sent_txlbrchf=true" target="iframe_txlbrchf" method="POST"
+          action="https://docs.google.com/forms/d/1ReC5aaxeQn3y94Sf_TptA2oKaXh4LD0NYJ2ruejsMtA/formResponse">
+
+        <div class="col-lg-10 col-lg-offset-1 text-center">
+            <div class="col-lg-3 text-center">
+                <div role="listitem" class="ss-form-question errorbox-good">
+                    <div class="ss-item ss-item-required ss-text" dir="ltr"><div class="ss-form-entry">
+                        <label for="entry_165934102" class="ss-q-item-label"><div class="ss-q-title">Name
+                            <label aria-label="(Required field)" for="itemView.getDomIdToLabel()"></label>
+                            <span aria-hidden="true" class="ss-required-asterisk">*</span></div>
+                            <div dir="ltr" class="ss-q-help ss-secondary-text"></div></label>
+                        <input type="text" title="" required="" aria-required="true" aria-label="Nome  " dir="auto" id="entry_165934102" class="ss-q-short" value="" name="entry.165934102">
+                        <div id="442051040_errorMessage" class="error-message"></div>
+                    </div></div></div>
+            </div>
+
+            <div class="col-lg-3 text-center">
+                <div role="listitem" class="ss-form-question errorbox-good">
+                    <div class="ss-item ss-item-required ss-text" dir="ltr">
+                        <div class="ss-form-entry">
+                            <label for="entry_243177183" class="ss-q-item-label">
+                                <div class="ss-q-title">Surname
+                                    <label aria-label="(Required field)" for="itemView.getDomIdToLabel()"></label>
+                                    <span aria-hidden="true" class="ss-required-asterisk">*</span></div>
+                                <div dir="ltr" class="ss-q-help ss-secondary-text"></div>
+                            </label>
+                            <input type="text" title="" required="" aria-required="true" aria-label="Cognome  "
+                                   dir="auto" id="entry_243177183" class="ss-q-short" value="" name="entry.243177183">
+
+                            <div id="1644004844_errorMessage" class="error-message"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 text-center">
+                <div role="listitem" class="ss-form-question errorbox-good">
+                    <div class="ss-item ss-item-required ss-text" dir="ltr">
+                        <div class="ss-form-entry">
+                            <label for="entry_1941328822" class="ss-q-item-label">
+                                <div class="ss-q-title">E-mail
+                                    <label aria-label="(Required field)" for="itemView.getDomIdToLabel()"></label>
+                                    <span aria-hidden="true" class="ss-required-asterisk">*</span></div>
+                                <div dir="ltr" class="ss-q-help ss-secondary-text"></div>
+                            </label>
+                            <input type="email" title="Must be a valid email address" required="" aria-required="true"
+                                   aria-label="E-mail  Must be a valid email address" dir="auto" id="entry_1941328822"
+                                   class="ss-q-short" value="" name="entry.1941328822">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 text-center">
+                <div role="listitem" class="ss-form-question errorbox-good">
+                    <div class="ss-item  ss-text" dir="ltr">
+                        <div class="ss-form-entry">
+                            <label for="entry_1123773119" class="ss-q-item-label">
+                                <div class="ss-q-title">Phone
+                                </div>
+                                <div dir="ltr" class="ss-q-help ss-secondary-text"></div>
+                            </label>
+                            <input type="text" title="" aria-label="Telefono  " dir="auto" id="entry_1123773119"
+                                   class="ss-q-short" value="" name="entry.1123773119">
+
+                            <div id="1162138596_errorMessage" class="error-message"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-12">
+            <hr>
+        </div>
+
+
+        <div class="col-lg-10 col-lg-offset-1 text-center">
+
+            <div class="col-lg-2 text-center">
+                <label for="entry_719775358" class="ss-q-item-label">
+                    <div class="ss-q-title">What else?
+                    </div>
+                    <div dir="ltr" class="ss-q-help ss-secondary-text"></div>
+                </label>
+            </div>
+            <div class="col-lg-8 text-center">
+                <div role="listitem" class="ss-form-question errorbox-good">
+                    <div class="ss-item  ss-paragraph-text" dir="ltr">
+                        <div class="ss-form-entry">
+
+                            <textarea aria-label="Altro?  " dir="auto" id="entry_719775358" class="ss-q-long" cols="0"
+                                      rows="1" name="entry.719775358"></textarea>
+
+                            <div id="2076666783_errorMessage" class="error-message"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 text-center">
+                <div class="ss-item ss-navigate">
+                    <table id="navigation-table">
+                        <tbody>
+                        <tr>
+                            <td dir="ltr" id="navigation-buttons" class="ss-form-entry goog-inline-block">
+                                <input type="submit" class="jfk-button jfk-button-action " id="ss-submit" value="Send"
+                                       name="submit"></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <input type="hidden" value="[,,&quot;-2364386226499460605&quot;]
+" name="draftResponse">
+        <input type="hidden" value="0" name="pageHistory">
+        <input type="hidden" value="-2364386226499460605" name="fbzx">
+
+
+    </form>
+</div>
