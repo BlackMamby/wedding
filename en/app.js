@@ -15,13 +15,13 @@ weddingApp.controller('showHide', function ($scope) {
 weddingApp.controller('balloonController', function ($scope) {
 
     $scope.texts = ["Look! Look... I'm flying!",
-        "It's because of our immeasurable love?",
+        "Is it because of our immeasurable love?",
         "...I'd rather say it's the Archimedes' principle!",
         "Mmmh... I see.",
         "Do you think we should tell something to our guests?",
         "Oh yes! Please, heeeeelp me!!!",
-        "...it was pretty ha ha!",
-        "All right, here's my second try then: Come one, come all! Music, food, lot of fun and cotillons!",
+        "...yeah nice try!",
+        "All right: Come one, come all! Music, food, fun and prizes!",
         "Oh yes! Can't wait to celebrate with you guys!",
         "Evviva!",
         "See you in Italy!",
