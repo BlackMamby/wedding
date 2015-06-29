@@ -1046,21 +1046,18 @@ body {
 
 @media (max-width:1024px ) {
     body {
-        background: url("../img/bg-mobile.jpg");
+        background: rgba(0, 0, 0, 0) url("../img/bg-mobile.jpg") no-repeat fixed center center;
         height: 100%;
         width: 100%;
-        background-position: center center;
-        background-repeat: no-repeat;
     }
-}
 
-@media (max-width:1024px ) {
     #cities {
-        animation: none;
+        animation: none !important;
         background: #dfeff9 url("../img/skyline.png") repeat-x scroll 1500px bottom;
     }
 
     #registry .call-to-action span {
         width: 90%;
     }
+}
 }
