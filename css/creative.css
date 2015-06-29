@@ -592,39 +592,6 @@ textarea {
     }
 }
 
-@-webkit-keyframes backgroundScroll {
-    0% {
-        transform: translate(0, 0);
-    }
-
-    10% {
-        transform: translate(0, 100px);
-    }
-
-    80% {
-        transform: translate(0, -5000px);
-    }
-    100% {
-        transform: translate(0, -6000px);
-    }
-}
-
-#cities {
-    background: #dfeff9 url('../img/skyline.png') repeat-x;
-    -webkit-animation: backgroundScroll 20s linear infinite;
-    animation: backgroundScroll 190s linear infinite;
-}
-
-@-webkit-keyframes backgroundScroll {
-    from {background-position: 0 bottom;}
-    to {background-position: -11318px bottom;}
-}
-
-@keyframes backgroundScroll {
-    from {background-position: 0 bottom;}
-    to {background-position: -11318px bottom;}
-}
-
 footer {
     background: #eee;
     color: #222;
@@ -1051,7 +1018,7 @@ body {
 
 @media (max-width:1024px ) {
     body {
-        background: rgba(0, 0, 0, 0) url("../img/bg-mobile.jpg") no-repeat fixed center center;
+        background: rgba(0, 0, 0, 0) url("../img/bg-mobile.jpg") repeat-y fixed center top;
         height: 100%;
         width: 100%;
     }
@@ -1065,4 +1032,50 @@ body {
         width: 90%;
     }
 }
+}
+
+
+
+@media (min-width:1024px ) {
+
+    @-webkit-keyframes backgroundScroll {
+        0% {
+            transform: translate(0, 0);
+        }
+
+        10% {
+            transform: translate(0, 100px);
+        }
+
+        80% {
+            transform: translate(0, -5000px);
+        }
+        100% {
+            transform: translate(0, -6000px);
+        }
+    }
+
+    #cities {
+        background: #dfeff9 url('../img/skyline.png') repeat-x;
+        -webkit-animation: backgroundScroll 20s linear infinite;
+        animation: backgroundScroll 190s linear infinite;
+    }
+
+    @-webkit-keyframes backgroundScroll {
+        from {
+            background-position: 0 bottom;
+        }
+        to {
+            background-position: -11318px bottom;
+        }
+    }
+
+    @keyframes backgroundScroll {
+        from {
+            background-position: 0 bottom;
+        }
+        to {
+            background-position: -11318px bottom;
+        }
+    }
 }
