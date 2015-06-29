@@ -1018,13 +1018,14 @@ body {
 
 @media (max-width:1024px ) {
     body {
-        background: rgba(0, 0, 0, 0) url("../img/bg-mobile.jpg") repeat-y fixed center top;
+        background: rgba(0, 0, 0, 0) url("../img/bg-mobile.jpg") repeat-y scroll center top;
         height: 100%;
         width: 100%;
     }
 
     #cities {
         animation: none !important;
+        -webkit-animation: none !important;
         background: #dfeff9 url("../img/skyline.png") repeat-x scroll 1500px bottom;
     }
 
