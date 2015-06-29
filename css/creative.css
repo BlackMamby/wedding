@@ -1032,6 +1032,10 @@ body {
     #registry .call-to-action span {
         width: 90%;
     }
+
+    #contact {
+        background: rgba(90, 114, 69, 1) none repeat scroll 0 0;
+    }
 }
 }
 
