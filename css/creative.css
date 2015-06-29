@@ -4,6 +4,15 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+html {
+    background-image: url(../img/bg.jpg);
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    background-attachment: fixed;
+}
 html,
 body {
     width: 100%;
@@ -12,13 +21,6 @@ body {
 
 body {
     font-family: 'Roboto', sans-serif;
-	background-image: url(../img/bg.jpg);
-    background-position: center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-	background-attachment: fixed;
 	font-weight:300;
 }
 
