@@ -950,6 +950,11 @@ body {
     webkit-tap-highlight-color: #222;
 }
 
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}
+
 @media (max-width:768px) {
     .header-content-inner {
         width: 60%;
