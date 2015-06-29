@@ -1044,13 +1044,9 @@ body {
     }
 }
 
-@media (max-width:1024px ) and (orientation:landscape) {
+@media (max-width:1024px ) {
     body {
-        background: url("../img/bg.jpg");
-        background-size: cover;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
+        background: url("../img/bg-mobile.jpg");
         height: 100%;
         width: 100%;
         position: fixed;
@@ -1061,7 +1057,7 @@ body {
 
 @media (max-width:1024px ) {
     #cities {
-        animation: 490s linear 0s normal none infinite running backgroundScroll;
+        animation: none;
         background: #dfeff9 url("../img/skyline.png") repeat-x scroll 1500px bottom;
     }
 
