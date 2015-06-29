@@ -4,19 +4,22 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
-html {
-    background: url(../img/bg.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+html,
+body {
+    width: 100%;
+    height: 100%;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
-	font-weight:300;
-    background-color: transparent !important;
-    overflow-x: hidden;
+    background-image: url(../img/bg.jpg);
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    background-attachment: fixed;
+    font-weight:300;
 }
 
 hr {
@@ -49,7 +52,7 @@ h4,
 h5,
 h6 {
     font-family: 'Roboto', sans-serif;
-	font-weight:300;
+    font-weight:300;
 }
 
 p {
@@ -75,7 +78,7 @@ p {
 
 section {
     padding: 100px 0;
-	background:#fff;
+    background:#fff;
     position:relative;
 }
 
@@ -130,7 +133,7 @@ aside {
     text-transform: uppercase;
     font-size: 13px;
     color: #222;
-	letter-spacing:3pt;
+    letter-spacing:3pt;
 }
 
 .navbar-default .nav > li>a:hover,
@@ -205,12 +208,12 @@ header {
     min-height: auto;
     text-align: center;
     color: #fff;
-	background:url("../img/wave_bg_wide.png") repeat-x scroll center bottom rgba(90, 114, 69, 0.7);
+    background:url("../img/wave_bg_wide.png") repeat-x scroll center bottom rgba(90, 114, 69, 0.7);
 }
 
 header p {
-	margin:0 auto !important;
-	padding:0;
+    margin:0 auto !important;
+    padding:0;
 }
 
 header .header-content {
@@ -239,7 +242,7 @@ header .header-content .header-content-inner p {
 }
 
 header .btn {
-	background-image: url(../img/kraft.jpg);
+    background-image: url(../img/kraft.jpg);
     -webkit-transition: all 0.2s ease-in-out 0s;
     -moz-transition: all 0.2s ease-in-out 0s;
     -ms-transition: all 0.2s ease-in-out 0s;
@@ -255,14 +258,14 @@ header .btn:hover {
 }
 
 #info {
-	padding:10px 0 100px 0;
+    padding:10px 0 100px 0;
 }
 
 #info hr {
-	border-top:dashed 3px #d3b484;
-	max-width:100%;
-	border-bottom:none;
-	padding:0 0 80px;
+    border-top:dashed 3px #d3b484;
+    max-width:100%;
+    border-bottom:none;
+    padding:0 0 80px;
 }
 
 #rsvp form hr {
@@ -420,17 +423,17 @@ textarea {
 }
 
 #registry {
-	background: #fff none repeat scroll 0 0;
+    background: #fff none repeat scroll 0 0;
 }
 
 #map {
-	margin:0 auto;
-	padding:0;
+    margin:0 auto;
+    padding:0;
 }
 
 #map iframe {
-	margin:0;
-	padding:0;
+    margin:0;
+    padding:0;
 }
 
 #contact {
@@ -443,7 +446,7 @@ textarea {
 }
 
 .google_map {
-  position: relative;
+    position: relative;
     margin:0 0 -10px 0;
 }
 .cover {
@@ -684,7 +687,7 @@ footer {
         margin: 50px auto 0;
         max-width: 400px;
     }
-    
+
     footer {
         text-align: center;
     }
@@ -1041,11 +1044,28 @@ body {
     }
 }
 
-@media (max-width:1024px ) {
-    #cities {
-        background: #dfeff9 url('../img/skyline.png') repeat-x;
-        -webkit-animation: none;
-        animation: none;
+@media (max-width:1024px ) and (orientation:landscape) {
+    body {
+        background: url("../img/bg.jpg");
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        background-position: center center;
+        background-repeat: no-repeat;
     }
 }
 
+@media (max-width:1024px ) {
+    #cities {
+        animation: 490s linear 0s normal none infinite running backgroundScroll;
+        background: #dfeff9 url("../img/skyline.png") repeat-x scroll 1500px bottom;
+    }
+
+    #registry .call-to-action span {
+        width: 90%;
+    }
+}
