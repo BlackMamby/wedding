@@ -5,13 +5,11 @@
  */
 
 html {
-    background-image: url(../img/bg.jpg);
-    background-position: center;
+    background: url(../img/bg.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
-    background-size: cover;
     -o-background-size: cover;
-    background-attachment: fixed;
+    background-size: cover;
 }
 html,
 body {
@@ -1046,3 +1044,12 @@ body {
         width: 100%;
     }
 }
+
+@media (max-width:1024px ) {
+    #cities {
+        background: #dfeff9 url('../img/skyline.png') repeat-x;
+        -webkit-animation: none;
+        animation: none;
+    }
+}
+
